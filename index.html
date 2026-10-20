@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Free booklet: The Middle East in Prophecy | Tomorrow's World</title>
+  <meta name="description" content="Get a free copy of The Middle East in Prophecy by Richard F. Ames, emailed to you.">
+  <!-- Keeps this page out of search results. Ads link to it directly. -->
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Cloudflare Turnstile: the "not a robot" check. The server confirms the result
+       with Cloudflare (src/shared/turnstile.mjs), so it can't be faked in the browser. -->
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <!-- DEMO: loads the logo from tomorrowsworld.org. Before go-live, save it into
+           an images/ folder and change src to "images/logo.png". -->
+      <img class="logo" src="https://www.tomorrowsworld.org/sites/default/files/logo_0.png"
+           alt="Tomorrow's World" data-fallback="logo-text">
+      <span class="logo-text" id="logo-text" hidden>Tomorrow’s World</span>
+      <p class="demo-flag" id="demo-flag" hidden>Demo mode: not connected to AWS, so nothing is saved</p>
+    </div>
+  </header>
+
+  <main class="wrap layout">
+
+    <section class="offer" aria-labelledby="title">
+      <div class="offer__cover">
+        <!-- DEMO: loads the cover from tomorrowsworld.org (same note as the logo). -->
+        <img class="cover" width="250" height="376"
+             src="https://www.tomorrowsworld.org/sites/default/files/styles/250x376/public/booklets/cover/me-middle_east_in_prophecy_3.0-cover.png"
+             alt="Cover of The Middle East in Prophecy" data-fallback="cover-fallback">
+        <div class="cover cover--fallback" id="cover-fallback" hidden aria-hidden="true">
+          <span class="cover__brand">Tomorrow’s World</span>
+          <span class="cover__title">The Middle East in Prophecy</span>
+          <span class="cover__author">Richard F. Ames</span>
+        </div>
+      </div>
+
+      <div class="offer__heading">
+        <p class="offer__tag">Free booklet</p>
+        <h1 id="title">The Middle East in Prophecy</h1>
+        <p class="offer__author">by Richard F. Ames</p>
+      </div>
+
+      <p class="offer__lead">
+        Do you know what the Bible teaches about the end-time climax of world events
+        in the Middle East? You may be surprised.
+      </p>
+    </section>
+
+    <section class="request" aria-labelledby="request-title">
+
+      <div id="form-view">
+        <h2 id="request-title">Get your free copy</h2>
+
+        <form id="request-form" novalidate>
+          <div class="field">
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" autocomplete="email" inputmode="email"
+                   maxlength="254" required aria-describedby="email-error">
+            <p class="field__error" id="email-error" hidden></p>
+          </div>
+
+          <div class="field">
+            <label for="first-name">First name <span class="optional">(optional)</span></label>
+            <input id="first-name" name="firstName" type="text" autocomplete="given-name" maxlength="40"
+                   aria-describedby="first-name-error">
+            <p class="field__error" id="first-name-error" hidden></p>
+          </div>
+
+          <div class="field">
+            <label for="country">Country</label>
+            <!-- Must match COUNTRIES in src/shared/validate.mjs word for word. -->
+            <select id="country" name="country" required aria-describedby="country-error">
+              <option value="">Choose your country</option>
+              <option>Australia</option>
+              <option>New Zealand</option>
+              <option>Fiji</option>
+              <option>Papua New Guinea</option>
+              <option>Samoa</option>
+              <option>Solomon Islands</option>
+              <option>Tonga</option>
+              <option>Vanuatu</option>
+              <option>Indonesia</option>
+              <option>Malaysia</option>
+              <option>Philippines</option>
+              <option>Singapore</option>
+              <option>India</option>
+              <option>Sri Lanka</option>
+              <option>Other</option>
+            </select>
+            <p class="field__error" id="country-error" hidden></p>
+          </div>
+
+          <div class="field field--check">
+            <input id="stay-in-touch" name="stayInTouch" type="checkbox">
+            <label for="stay-in-touch">Email me occasionally about more free resources from Tomorrow’s World</label>
+          </div>
+
+          <!-- Bot trap: hidden from people; bots fill in every field they find.
+               The server quietly drops any request where this isn't empty. -->
+          <div class="hp" aria-hidden="true">
+            <label for="website">Website</label>
+            <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+          </div>
+
+          <!-- DEMO: Cloudflare's public TEST site key, which always passes.
+               Go-live: replace with your real site key from the Cloudflare dashboard. -->
+          <div class="turnstile cf-turnstile" data-sitekey="1x00000000000000000000AA" data-theme="light"></div>
+          <p class="field__error" id="turnstile-error" hidden></p>
+
+          <!-- PRIVACY NOTICE: the highlighted parts must be filled in and approved before go-live. -->
+          <p class="privacy" id="privacy">
+            We’ll use your details to email you this booklet and keep a record of requests
+            for <mark>[12 months, to be confirmed]</mark>. If you tick the box above, we may also
+            email you occasionally, and you can unsubscribe at any time. Your details are collected by
+            <mark>[organisation name, to be confirmed]</mark> and stored securely with Amazon Web
+            Services in Sydney. Cloudflare checks that you’re not a robot. To see or delete your
+            information, email <mark>[contact email, to be confirmed]</mark>.
+          </p>
+
+          <button class="button" id="submit-button" type="submit">Email me the booklet</button>
+          <p class="form-status" id="form-status" role="alert" hidden></p>
+        </form>
+      </div>
+
+      <div class="thanks" id="thanks" hidden>
+        <h2 id="thanks-title" tabindex="-1">Check your inbox</h2>
+        <p>
+          We’ve emailed your booklet as a PDF to <strong id="thanks-email"></strong>. It should arrive
+          within a few minutes. If it doesn’t, check your spam or junk folder.
+        </p>
+        <p class="demo-note" id="demo-note" hidden>Demo mode: no email was sent and nothing was saved.</p>
+        <h3>More free resources</h3>
+        <ul class="more">
+          <li><a href="https://www.tomorrowsworld.org/order-the-digital-edition?page_source=au_booklet_page">Get <cite>Tomorrow’s World</cite> magazine free in your inbox</a></li>
+          <li><a href="https://www.tomorrowsworld.org/connect/subscriptions?page_source=au_booklet_page">Sign up for the weekly email digest</a></li>
+        </ul>
+      </div>
+
+    </section>
+
+    <section class="details" aria-labelledby="details-title">
+      <h2 id="details-title">What you’ll get</h2>
+      <ul>
+        <li>An email with your booklet attached as a PDF, usually within a few minutes.</li>
+        <li>A link to the audio version, where you can also read it online.</li>
+        <li>All literature from <cite>Tomorrow’s World</cite> is free of charge.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <ul>
+        <li>© <span id="year">2026</span> Tomorrow’s World</li>
+        <li><a href="#privacy">How we use your details</a></li>
+        <li><a href="https://www.tomorrowsworld.org/">TomorrowsWorld.org</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
